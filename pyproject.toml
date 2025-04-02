@@ -1,0 +1,23 @@
+[project]
+name = "aws_ad"
+version = "0.1.0"
+description = "aws-ad using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0"
+]
+
+[project.scripts]
+aws_ad = "aws_ad.main:run"
+run_crew = "aws_ad.main:run"
+train = "aws_ad.main:train"
+replay = "aws_ad.main:replay"
+test = "aws_ad.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
