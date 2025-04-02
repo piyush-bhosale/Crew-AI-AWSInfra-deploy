@@ -1,0 +1,8 @@
+# src/latest_ai_development/config/tasks.yaml
+
+create_ad_task:
+  description: >
+    I want to create or delete an AWS Directory Service in the region.
+  expected_output: >
+    create or delete AWS Directory Service.
+  agent: aws_expert
